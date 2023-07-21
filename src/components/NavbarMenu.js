@@ -1,6 +1,5 @@
 import React , { useState }from 'react'
 import Logo from '../assets/mate.png'
-import { Link } from "react-router-dom"
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -17,24 +16,6 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 
 const NavbarMenu = () => {
     const [openMenu, setOpenMenu] = useState(false);
-    const menuOptions = [
-        {
-            text: "Home",
-            icon: <HomeIcon />,
-        },
-        {
-            text: "About",
-            icon: <InfoIcon />,
-        },
-        {
-            text: "Menu",
-            icon: <RestaurantMenuIcon />,
-        },
-        {
-            text: "Testimonials",
-            icon: <CommentRoundedIcon />,
-        },
-    ];
     return (
         <nav>
             <div className="nav-logo-container">
@@ -57,14 +38,34 @@ const NavbarMenu = () => {
                     onKeyDown={() => setOpenMenu(false)}
                 >
                     <List>
-                        {menuOptions.map((item) => (
-                        <ListItem key={item.text} disablePadding>
-                            <ListItemButton>
-                                <ListItemIcon>{item.icon}</ListItemIcon>
-                                <ListItemText primary={item.text} />
-                            </ListItemButton>
+                        <ListItem disablePadding>
+                            <div className='nav-responsive'>
+                                <div>
+                                    <a href='/'>
+                                        <ListItemIcon><HomeIcon /></ListItemIcon>
+                                        <span>Home</span>
+                                    </a>    
+                                </div><br/>
+                                <div>
+                                    <a href='/'>
+                                        <ListItemIcon><InfoIcon /></ListItemIcon>
+                                        <span>About</span>
+                                    </a>
+                                </div><br/>
+                                <div>
+                                    <a href='/menu'>
+                                        <ListItemIcon><RestaurantMenuIcon /></ListItemIcon>
+                                        <span>Menu</span>
+                                    </a>    
+                                </div><br/>
+                                <div>
+                                    <a href='/'>
+                                        <ListItemIcon><CommentRoundedIcon /></ListItemIcon>
+                                        <span>Testimonial</span>
+                                    </a>     
+                                </div>
+                            </div>
                         </ListItem>
-                        ))}
                     </List>
                 <Divider />
                 </Box>

@@ -22,7 +22,7 @@ const Menu = () => {
         <div>
         <NavbarMenu />
         <div className="work-test" id="menu">
-            <div className="home-bannerImage-container-menu">
+            <div className="home-bannerImage-container">
                 <img src={BannerBackground} alt="" />
             </div>
             <div className="">
@@ -39,9 +39,9 @@ const Menu = () => {
                                 <img src={item.gambar} alt="" />
                             </div>
                             <h4>{item.nama}</h4>
-                            <button className="secondary-button">
+                            <div className="secondary-button-price">
                                 {item.harga}
-                            </button>
+                            </div>
                         </div>
                       )
                     })

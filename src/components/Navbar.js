@@ -13,12 +13,9 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-    const navigate = useNavigate()
     const [openMenu, setOpenMenu] = useState(false);
-    
     return (
         <nav>
             <div className="nav-logo-container">
@@ -45,25 +42,25 @@ const Navbar = () => {
                             <div className='nav-responsive'>
                                 <div>
                                     <a href='/#'>
-                                        <HomeIcon />
-                                        <a>Home</a>
+                                        <ListItemIcon><HomeIcon /></ListItemIcon>
+                                        <span>Home</span>
                                     </a>    
                                 </div><br/>
                                 <div>
                                     <a href='/#about'>
-                                        <><InfoIcon /></>
+                                        <ListItemIcon><InfoIcon /></ListItemIcon>
                                         <span>About</span>
                                     </a>
                                 </div><br/>
                                 <div>
                                     <a href='/menu'>
-                                        <><RestaurantMenuIcon /></>
+                                        <ListItemIcon><RestaurantMenuIcon /></ListItemIcon>
                                         <span>Menu</span>
                                     </a>    
                                 </div><br/>
                                 <div>
-                                <   a href='/#testimonial'>
-                                        <><CommentRoundedIcon /></>
+                                    <a href='/#testimonial'>
+                                        <ListItemIcon><CommentRoundedIcon /></ListItemIcon>
                                         <span>Testimonial</span>
                                     </a>     
                                 </div>

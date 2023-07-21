@@ -105,6 +105,22 @@ nav {
   color: #6a6a6a;
   margin: 1.5rem 0rem;
 }
+.secondary-button-price {
+  padding: 1rem 2.5rem;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(83, 83, 83);
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
 .secondary-button {
   padding: 1rem 2.5rem;
   background-color: #164EA2;
@@ -199,9 +215,6 @@ nav {
   margin-right: 1.25rem;
   color: #585858;
 }
-/* .footer-section-one {
-  border: 2px solid blue;
-} */
 .footer-section-two {
   flex: 1;
   display: flex;
@@ -239,11 +252,6 @@ nav {
   max-width: 500px;
   font-size: 1.1rem;
   margin: 2rem 0rem;
-}
-.testimonials-stars-container svg {
-  margin: 0rem 0.25rem;
-  font-size: 1.5rem;
-  color: #fe9e0d;
 }
 .testimonial-section-bottom h2 {
   margin-top: 1.5rem;

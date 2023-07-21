@@ -34,9 +34,9 @@ const Work = () => {
                         <img src={data.image} alt="" />
                     </div>
                     <h4>{data.title}</h4>
-                    <button className="secondary-button">
+                    <div className="secondary-button-price">
                         {data.price}
-                    </button>
+                    </div>
                 </div>
             ))}
         </div>
