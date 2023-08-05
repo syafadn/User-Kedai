@@ -1,16 +1,9 @@
 import './App.css';
-import About from './components/About';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Menu from './components/Menu';
-import Navbar from './components/Navbar';
-import Testimonial from './components/Testimonial';
-import Work from './components/Work';
+import Menu from './components/Menu'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ApolloProvider } from '@apollo/client'
 import client from './config/apolloclient'
 import Layout from './components/Layout';
-
 function App() {
   return (
     <div className="App">
@@ -25,5 +18,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

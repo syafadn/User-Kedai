@@ -6,9 +6,7 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
@@ -26,6 +24,7 @@ const NavbarMenu = () => {
                 <a href="/">About</a>
                 <a href="/menu">Menu</a>
                 <a href="/">Testimonial</a>
+                <a href="https://wa.me/6283191763311" target="_blank">Order</a>
             </div>
             <div className="navbar-menu-container">
                 <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -62,6 +61,12 @@ const NavbarMenu = () => {
                                     <a href='/'>
                                         <ListItemIcon><CommentRoundedIcon /></ListItemIcon>
                                         <span>Testimonial</span>
+                                    </a>     
+                                </div>
+                                <div>
+                                    <a href='https://wa.me/6283191763311' target="_blank">
+                                        <ListItemIcon><RestaurantMenuIcon /></ListItemIcon>
+                                        <span>Order</span>
                                     </a>     
                                 </div>
                             </div>

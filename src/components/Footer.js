@@ -2,7 +2,6 @@ import React from "react";
 import Logo from "../assets/mate.png";
 import { BsInstagram } from "react-icons/bs";
 import { BsTiktok } from "react-icons/bs";
-
 const Footer = () => {
   return (
     <div className="footer-wrapper">
@@ -37,5 +36,4 @@ const Footer = () => {
     </div>
   );
 };
-
 export default Footer;

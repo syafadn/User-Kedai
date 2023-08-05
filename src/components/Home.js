@@ -2,7 +2,6 @@ import React from "react";
 import BannerBackground from "../assets/bg-atas.png";
 import coklat from "../assets/coklat.png"
 import { FiArrowRight } from "react-icons/fi";
-
 const Home = () => {
   return (
     <div className="home-container">
@@ -19,11 +18,6 @@ const Home = () => {
             Immediately feel the delicious sensation before it runs out and 
             spread kindness in every portion!
           </p>
-          <a href="https://wa.me/6283191763311" target="_blank">
-            <button className="secondary-button">
-              Order Now <FiArrowRight />{" "}
-            </button>
-          </a>
         </div>
         <div className="home-image-section">
           <img src={coklat} alt="" />
@@ -32,5 +26,4 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;

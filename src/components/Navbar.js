@@ -13,7 +13,6 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     return (
@@ -26,6 +25,7 @@ const Navbar = () => {
                 <a href="#about">About</a>
                 <a href="/menu">Menu</a>
                 <a href="#testimonial">Testimonial</a>
+                <a href="https://wa.me/6283191763311" target="_blank">Order</a>
             </div>
             <div className="navbar-menu-container">
                 <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -63,6 +63,12 @@ const Navbar = () => {
                                         <ListItemIcon><CommentRoundedIcon /></ListItemIcon>
                                         <span>Testimonial</span>
                                     </a>     
+                                </div><br/>
+                                <div>
+                                    <a href='https://wa.me/6283191763311' target="_blank">
+                                        <ListItemIcon><RestaurantMenuIcon /></ListItemIcon>
+                                        <span>Order</span>
+                                    </a>     
                                 </div>
                             </div>
                         </ListItem>
@@ -73,5 +79,4 @@ const Navbar = () => {
         </nav>
     )
 }
-
 export default Navbar

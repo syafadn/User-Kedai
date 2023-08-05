@@ -2,7 +2,6 @@ import React from "react";
 import kejuchoco from "../assets/kejuchoco.png"
 import kejutira from "../assets/kejutira.png"
 import tiramilo from "../assets/tiramilo.png"
-
 const Work = () => {
   const workInfoData = [
     {
@@ -43,5 +42,4 @@ const Work = () => {
     </div>
   );
 };
-
 export default Work;

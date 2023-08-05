@@ -2,8 +2,6 @@ import React from "react";
 import AboutBackground from "../assets/bg-bawah.png";
 import AboutBackgroundImage from "../assets/pancong.png";
 import { FiArrowRight } from "react-icons/fi";
-
-
 const About = () => {
   return (
     <div className="about-section-container" id="about">
@@ -30,5 +28,4 @@ const About = () => {
     </div>
   );
 };
-
 export default About;

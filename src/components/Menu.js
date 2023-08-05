@@ -3,7 +3,6 @@ import AboutBackground from "../assets/bg-bawah.png";
 import { gql, useQuery } from "@apollo/client"
 import NavbarMenu from "./NavbarMenu";
 import Footer from "./Footer";
-
 export const GetMenu = gql`
   query menu {
     menu {
@@ -15,7 +14,6 @@ export const GetMenu = gql`
     }
   }
 `
-
 const Menu = () => {
     const { data } = useQuery(GetMenu)
     return (
@@ -57,5 +55,4 @@ const Menu = () => {
         </div>
     );
   };
-  
   export default Menu;

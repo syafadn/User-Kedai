@@ -1,6 +1,5 @@
 import React from "react";
 import bintang from "../assets/bintang.png"
-
 const Testimonial = () => {
   return (
     <div className="work-section-wrapper" id="testimonial">
@@ -24,5 +23,4 @@ const Testimonial = () => {
     </div>
   );
 };
-
 export default Testimonial;
